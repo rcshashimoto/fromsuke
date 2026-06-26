@@ -78,38 +78,38 @@
 		<a href="#" class="more-btn">その他のメニューを見る</a>
 	</section>
 
-  <!-- お問い合わせ -->
-  <section id="contact" class="contact section">
-    <h2>お問い合わせ</h2>
+	<!-- お問い合わせ -->
+	<section id="contact" class="contact section">
+		<div class="contact-inner">
+			<h2>お問い合わせ</h2>
 
-    <div class="contact-image">
-      <img src="images/contact.jpg" alt="お問い合わせイメージ">
-    </div>
+			<form class="contact-form">
+				<label>
+					お名前
+					<input type="text" name="name" placeholder="例）山田 太郎">
+				</label>
 
-    <form class="contact-form">
-      <label>
-        お名前
-        <input type="text" name="name">
-      </label>
+				<label>
+					メールアドレス
+					<input type="email" name="email" placeholder="例）example@mail.com">
+				</label>
 
-      <label>
-        メールアドレス
-        <input type="email" name="email">
-      </label>
+				<label>
+					メール確認
+					<input type="email" name="email-confirm" placeholder="例）example@mail.com">
+				</label>
 
-      <label>
-        メール確認
-        <input type="email" name="email-confirm">
-      </label>
+				<label class="contact-message">
+					内容
+					<textarea name="message" placeholder="お問い合わせ内容をご記入ください"></textarea>
+				</label>
 
-      <label>
-        内容
-        <textarea name="message"></textarea>
-      </label>
-
-      <button type="submit">送信</button>
-    </form>
-  </section>
+				<div class="contact-actions">
+					<button type="submit">送信する</button>
+				</div>
+			</form>
+		</div>
+	</section>
 
   <!-- フッター -->
   <footer class="footer">

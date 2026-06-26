@@ -166,44 +166,84 @@ a {
 }
 
 /* お問い合わせ */
-.contact-image {
-    margin: 30px 0 40px;
+.contact {
+    max-width: none;
+    width: 100%;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("images/contact.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
-.contact-image img {
-    height: 220px;
-    object-fit: cover;
-    background: #eee;
+.contact h2 {
+    color: #fff;
+}
+
+.contact h2::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 2px;
+    margin: 12px auto 0;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.contact-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 24px 90px;
 }
 
 .contact-form {
-    max-width: 650px;
-    margin: 0 auto;
-    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 24px;
+    margin-top: 36px;
 }
 
 .contact-form label {
-    display: block;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
     font-weight: bold;
+    text-align: left;
+    gap: 8px;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 12px;
-    margin-top: 6px;
-    border: 1px solid #aaa;
+    padding: 12px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
     font-size: 16px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
 }
 
 .contact-form textarea {
     height: 160px;
+    resize: vertical;
+}
+
+.contact-message {
+    grid-column: 2 / 3;
+}
+
+.contact-message textarea {
+    min-height: 140px;
+}
+
+.contact-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
 }
 
 .contact-form button {
-    padding: 12px 40px;
-    background: #333;
+    min-width: 220px;
+    padding: 14px 40px;
+    background: #5a7d3b;
     color: #fff;
     border: none;
     font-size: 16px;
@@ -262,6 +302,27 @@ a {
 
     .product-list {
         grid-template-columns: 1fr;
+    }
+
+    .contact-inner {
+        padding: 72px 20px 72px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-message {
+        grid-column: auto;
+    }
+
+    .contact-actions {
+        justify-content: stretch;
+    }
+
+    .contact-form button {
+        width: 100%;
+        min-width: 0;
     }
 
     .footer {
