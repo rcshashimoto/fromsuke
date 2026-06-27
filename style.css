@@ -76,7 +76,7 @@ Hero
 
     height:100vh;
 
-    background-image:url("images/daan-evers-tKN1WXrzQ3s-unsplash.jpg");
+    background-image:url("images/contact.jpg");
     background-size:cover;
     background-position:center;
 
@@ -153,6 +153,7 @@ Hero
 .section h2 {
     font-size: 32px;
     letter-spacing: 3px;
+    color: #5a7d3b;
 }
 
 .section-title-ja {
@@ -164,7 +165,7 @@ Hero
 Concept
 ========================= */
 
-.concept {
+/*.concept {
   background: #fff;
   padding: 120px 24px;
   text-align: center;
@@ -188,12 +189,21 @@ Concept
   margin-bottom: 40px;
   font-weight: bold;
 }
+*/
+
+.concept {
+  background: #fff;
+}
 
 .concept-text {
-  font-size: 17px;
-  line-height: 2.4;
+  max-width: 720px;
+  margin: 40px auto 0;
+  font-size: 16px;
+  line-height: 2.2;
   color: #444;
 }
+
+
 /* 商品 */
 .product-list {
     display: grid;
