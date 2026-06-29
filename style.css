@@ -349,8 +349,8 @@ Concept
     width: 100%;
     padding: 24px 8%;
     border-top: 1px solid #e5e0d8;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 24px;
     background: #fff;
@@ -369,10 +369,12 @@ Concept
     text-align: left;
     font-size: 14px;
     line-height: 1.7;
+    justify-self: start;
 }
 
 .footer-center {
     text-align: center;
+    justify-self: center;
 }
 
 .footer-center p {
@@ -386,6 +388,7 @@ Concept
     display: flex;
     justify-content: flex-end;
     gap: 14px;
+    justify-self: end;
 }
 
 .footer-social a {
@@ -459,6 +462,7 @@ Concept
 
     .footer {
         flex-direction: column;
+        display: flex;
         gap: 20px;
         text-align: center;
         padding: 28px 20px;
