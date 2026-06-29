@@ -27,67 +27,119 @@ a {
 
 /* ヘッダー */
 .header {
-    width: 100%;
-    height: 70px;
-    padding: 0 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+  width: 100%;
+  height: 80px;
+  padding: 0 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 2px;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .nav {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 40px;
 }
 
 .nav a {
-    font-size: 14px;
-    font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
 }
 
-/* メインビジュアル */
+.nav a:hover {
+  color: #6a9b4d;
+}
+
+/* =========================
+Hero
+========================= */
+
 .hero {
-    height: 520px;
-    margin-top: 70px;
-    background-image: url("images/hero.jpg");
-    background-size: cover;
-    background-position: center;
-    position: relative;
+
+    height:100vh;
+
+    background-image:url("images/contact.jpg");
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 8%;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25);
+.hero-overlay{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
 }
 
-.hero-text {
-    position: absolute;
-    left: 8%;
-    bottom: 80px;
-    color: #fff;
+.hero-content{
+
+    position:relative;
+
+    color:#fff;
+
+    z-index:10;
+
 }
 
-.hero-text h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+.hero-subtitle{
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    margin-bottom:24px;
+
 }
 
-.hero-text p {
-    font-size: 18px;
+.hero h1{
+
+    font-size:84px;
+
+    line-height:1;
+
+    margin-bottom:32px;
+
+    font-weight:700;
+
+}
+
+.hero-text{
+
+    font-size:24px;
+
+    line-height:2;
+
 }
 
 /* 共通 */
@@ -101,6 +153,7 @@ a {
 .section h2 {
     font-size: 32px;
     letter-spacing: 3px;
+    color: #5a7d3b;
 }
 
 .section-title-ja {
@@ -108,12 +161,48 @@ a {
     margin-bottom: 35px;
 }
 
-/* コンセプト */
-.concept-text {
-    max-width: 680px;
-    margin: 0 auto;
-    text-align: left;
+/* =========================
+Concept
+========================= */
+
+/*.concept {
+  background: #fff;
+  padding: 120px 24px;
+  text-align: center;
 }
+
+.concept-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-label {
+  color: #6a9b4d;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+
+.concept h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+*/
+
+.concept {
+  background: #fff;
+}
+
+.concept-text {
+  max-width: 720px;
+  margin: 40px auto 0;
+  font-size: 16px;
+  line-height: 2.2;
+  color: #444;
+}
+
 
 /* 商品 */
 .product-list {
